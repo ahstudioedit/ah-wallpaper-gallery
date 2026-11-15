@@ -1,16 +1,16 @@
 # AH Wallpaper Gallery
 
-تصاميم تفاعلية لبرنامج AH Wallpaper. يقرأ البرنامج `index.json` من هذا المستودع ويعرض التصاميم في تبويبة «اكتشف».
+Interactive designs for AH Wallpaper. The app reads `index.json` from this repository and shows the designs in its **Discover** tab.
 
-## إضافة تصميم
-1. أنشئ مجلدًا داخل `designs/` باسم قصير بالإنجليزية بلا مسافات، مثل `neon-city`.
-2. ضع فيه:
-   - `design.ahwp` — من زر «مشاركة» في البرنامج.
-   - `thumb.jpg` — صورة 640×360 تقريبًا، أقل من 150KB.
-   - `meta.json` — انسخه من `designs/example/` وعدّل الاسم والمصمم.
-3. شغّل `python tools/make_index.py`.
-4. ارفع التعديلات (commit + push).
+## Adding a design
+1. Create a folder inside `designs/` with a short English name and no spaces, e.g. `neon-city`.
+2. Put these files in it:
+   - `design.ahwp` — exported with the **Share** button in the app.
+   - `thumb.jpg` — about 640×360, under 150 KB.
+   - `meta.json` — copy it from `designs/example/` and edit the name and author.
+3. Run `python tools/make_index.py`.
+4. Commit and push.
 
-## الحدود
-- حجم `design.ahwp` حتى 20MB. التصاميم الأكبر تُرفع في GitHub Releases.
-- راجع كل تصميم قبل إضافته.
+## Limits
+- `design.ahwp` can be up to 20 MB. Larger designs go in GitHub Releases.
+- Review every design before adding it.
